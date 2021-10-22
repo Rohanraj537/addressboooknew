@@ -16,7 +16,7 @@ pipeline {
   }
   stage ('create docker image') {
    steps {
-    'docker build -t devopsxprts/addressbook:20210928.10 .'
+    bat 'docker build -t devopsxprts/addressbook:20210928.10 .'
    }
   }
   stage ('upload image to docker registry') {
