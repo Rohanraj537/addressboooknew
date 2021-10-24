@@ -16,7 +16,7 @@ pipeline {
   }
   stage ('create docker image') {
    steps {
-    sh 'sudo docker build -t Rohanraj537/addressbook:20210928.$BUILD_NUMBER .'
+    sh 'sudo docker build -t rohanraj537/addressbook:20210928.$BUILD_NUMBER .'
    }
   }
   stage ('upload image to docker registry') {
